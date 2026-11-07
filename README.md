@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min AR Modell</title>
     <!-- Riktig og oppdatert lenke til AR-motoren -->
-    <script> type="module" src="https://googleapis.com"></script>
+    <script> 
+        type="module" src="https://googleapis.com"></script>
     <style>
         body { margin: 0; padding: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; }
         model-viewer { width: 100%; height: 100%; }
