@@ -3,8 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildesporing AR</title>
+    <!-- Henter A-Frame 3D-motoren og MindAR biblioteket -->
+    <script src="https://aframe.io"></script>
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        body { margin: 0; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <!-- Konfigurerer AR-kameraet til å lete etter targets.mind-filen din -->
+    <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      
+      <a-assets>
+        <!-- Henter 3D-modellen din (samme format for både Android og iPhone her) -->
+        <a-asset-item id="avatarModel" src="cube.glb"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <!-- targetIndex: 0 betyr det første bildet du lastet opp i filen.
+           Når kameraet ser kortet, tegnes 3D-modellen oppå det. -->
+      
+        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.05 0.05 0.05" src="#avatarModel"></a-gltf-model>
+      
+      
+    </a-scene>
+
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min AR Modell</title>
-    <!-- Den offisielle og korrekte lenken til Googles AR-motor -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         body { margin: 0; padding: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; }
