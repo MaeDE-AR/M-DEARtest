@@ -5,46 +5,10 @@
     View in your space
   </button>
 
-  <div id="ar-prompt">
-    <img src="../../assets/hand.png">
-  </div>
-
   <button id="ar-failure">
     AR is not tracking!
   </button>
-
-  <div class="slider">
-    <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('../../assets/ShopifyModels/Chair.webp');">
-
-      </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/ShopifyModels/Mixer.webp');">
-
-      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/ShopifyModels/GeoPlanter.webp');">
-      
-      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ShopifyModels/ToyTrain.webp');">
-      
-      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.webp');">    
-    </button></div>
-  </div>
 </model-viewer>
-
-<script type="module">
-  const modelViewer = document.querySelector("model-viewer");
-
-  window.switchSrc = (element, name) => {
-    const base = "../../assets/ShopifyModels/" + name;
-    modelViewer.src = base + '.glb';
-    modelViewer.poster = base + '.webp';
-    const slides = document.querySelectorAll(".slide");
-    slides.forEach((element) => {element.classList.remove("selected");});
-    element.classList.add("selected");
-  };
-
-  document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
-    // Keep slider interactions from affecting the XR scene.
-    ev.preventDefault();
-  });
-</script>
 
 <style>
   /* This keeps child nodes hidden while the element loads */
