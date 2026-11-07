@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min AR Modell</title>
     <!-- Riktig og oppdatert lenke til AR-motoren -->
     <script type="module" src="https://googleapis.com">
     </script>
