@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <model-viewer 
+    <model-viewer> 
         src="cube.glb" 
         ios-src="CUBE.usdz" 
         ar
