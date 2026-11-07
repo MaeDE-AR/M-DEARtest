@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min AR Modell</title>
-    <!-- Den nøyaktige og fulle lenken til Googles 3D/AR-motor -->
-    <script type="module" src="https://googleapis.com"></script>
+    <!-- Den offisielle og korrekte lenken til Googles AR-motor -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         body { margin: 0; padding: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; }
         model-viewer { width: 100%; height: 100%; }
@@ -15,7 +15,7 @@
 
     <model-viewer 
         src="cube.glb" 
-        ios-src="CUBE.usdc" 
+        ios-src="CUBE.usdz" 
         ar
         ar-modes="webxr scene-viewer quick-look" 
         camera-controls 
@@ -26,3 +26,4 @@
 
 </body>
 </html>
+
