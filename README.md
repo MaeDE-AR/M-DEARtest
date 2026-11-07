@@ -4,5 +4,3 @@
 <!-- Use it like any other HTML element -->
 <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="cube.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
 <!--ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp"-->
-
-<img width="856" height="828" alt="image" src="https://github.com/user-attachments/assets/a69fb365-6779-40cb-a543-92e21b5e4940" />
