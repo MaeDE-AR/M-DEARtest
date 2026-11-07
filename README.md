@@ -14,9 +14,7 @@
     </style>
 </head>
 <body>
-
-    <!-- Rettet opp taggen slik at alt står INNE i åpningstaggen -->
-    <model-viewer 
+    <model-viewer
         src="cube.glb" 
         ios-src="CUBE.usdz" 
         ar
