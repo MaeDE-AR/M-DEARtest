@@ -1,4 +1,4 @@
-# M-DEARtest
+# MÆDEARtest
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
 
 <!-- Use it like any other HTML element -->
