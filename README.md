@@ -1,5 +1,5 @@
 # MÆDEARtest
-<model-viewer src="../../assets/ShopifyModels/Chair.glb" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
+<model-viewer src="cube.glb" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   
   <button slot="ar-button" id="ar-button">
     View in your space
