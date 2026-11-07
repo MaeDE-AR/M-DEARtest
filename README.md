@@ -14,11 +14,10 @@
     </style>
 </head>
 <body>
-
     <!-- Rettet opp taggen slik at alt står INNE i åpningstaggen -->
     <model-viewer 
         src="cube.glb" 
-        ios-src="CUBE.usdz" 
+        ios-src="CUBE.usdc" 
         ar
         ar-modes="webxr scene-viewer quick-look" 
         camera-controls 
