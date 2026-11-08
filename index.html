@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bildesporing AR</title>
-    <!-- Riktige og fullstendige skript for maksimal hastighet -->
-    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/package-name"></script> 
+    <title>Min AR Modell</title>
+    <!-- Den offisielle og korrekte lenken til Googles AR-motor -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
-        body { margin: 0; overflow: hidden; }
-        /* Skjuler standard A-Frame VR-knapper for et renere design på mobil */
-        .a-enter-vr { display: none; }
+        body { margin: 0; padding: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; }
+        model-viewer { width: 100%; height: 100%; }
     </style>
 </head>
 <body>
 
-    <!-- uiLoading: yes legger til en innebygd lasteskjerm mens AR starter -->
-    <a-scene mindar-image="imageTargetSrc: targets.mind; uiLoading: yes; uiScanning: yes;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      
-      <a-assets>
-        <!-- Henter 3D-modellen din -->
-        <a-asset-item id="avatarModel" src="cube.glb"></a-asset-item>
-      </a-assets>
-
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
-      <!-- Kobler modellen til det første bildet i targets.mind -->
-      
-        <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.05 0.05 0.05" src="#avatarModel"></a-gltf-model>
-      
-      
-    </a-scene>
+    <model-viewer 
+        src="cube.glb" 
+        ios-src="CUBE.usdc" 
+        ar
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        touch-action="pan-y" 
+        alt="En 3D-modell i AR" 
+        shadow-intensity="1">
+    </model-viewer>
 
 </body>
 </html>
